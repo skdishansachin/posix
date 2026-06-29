@@ -13,7 +13,9 @@ pub fn build(b: *std.Build) void {
     });
     const optimize = b.standardOptimizeOption(.{});
 
-    const utilities = [_]struct { []const u8, []const u8 }{};
+    const utilities = [_]struct { []const u8, []const u8 }{
+        .{ "true", "src/true.zig" },
+    };
 
     for (utilities) |util| {
         const name = util[0];
