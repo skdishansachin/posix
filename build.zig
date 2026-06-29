@@ -17,6 +17,7 @@ pub fn build(b: *std.Build) void {
         .{ "true", "src/true.zig" },
         .{ "false", "src/false.zig" },
         .{ "echo", "src/echo.zig" },
+        .{ "dirname", "src/dirname.zig" },
     };
 
     for (utilities) |util| {
