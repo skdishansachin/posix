@@ -16,6 +16,7 @@ pub fn build(b: *std.Build) void {
     const utilities = [_]struct { []const u8, []const u8 }{
         .{ "true", "src/true.zig" },
         .{ "false", "src/false.zig" },
+        .{ "echo", "src/echo.zig" },
     };
 
     for (utilities) |util| {
